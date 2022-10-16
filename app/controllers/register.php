@@ -8,8 +8,6 @@
   $data = $check -> fetch();
   $row = $check -> rowCount();
 
-  var_dump($data);
-
   if($row === 0) {
     $password = htmlspecialchars($_POST['password']);
     $cost = ['cost' => 12];
@@ -28,7 +26,12 @@
         ':password' => $password_hash,
         'admin' => $admin
     ));
-    $_SESSION['user'] = $data['user_id'];
+
+    $check = $pdo -> prepare('SELECT name, user_id, admin FROM users WHERE name = :name');
+    $check -> execute(array(':name' => $name));
+    $data = $check -> fetch();
+
+    $_SESSION['user'] = $data;
     header('Location: ../pages/home.php'); die();
   }
 
