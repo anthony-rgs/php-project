@@ -1,0 +1,116 @@
+.homepage {
+  height: 100vh;
+}
+
+.logo {
+  margin: 40px 0 0 90px;
+
+  width: 10vw;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 80vh;
+}
+
+.homepage-content {
+  position: relative;
+
+  width: 100%;
+}
+
+.homepage-image {
+  width: 55vw;
+
+  margin-left: -9%;
+}
+
+.presentation {
+  position: absolute;
+  top: 0;
+  right: 10%;
+
+  width: 40vw;
+}
+
+.presentation__h1 {
+  font-family: Avenir-Heavy;
+  font-size: 2.625rem;
+  line-height: 55.2px;
+
+  margin: -8px 0 0;
+}
+
+.presentation__text {
+  font-family: Avenir-Book;
+  font-size: 1.5rem;
+  line-height: 31.2px;
+
+  margin: 40px 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 32px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+  height: 52px;
+  width: 248px;
+}
+
+.button__text {
+  font-family: Avenir-Heavy;
+  font-size: 1.125rem;
+
+  margin: 0;
+}
+
+.button--login {
+  background-color: var(--main-color);
+  color: var(--white);
+}
+
+.button--login:hover {
+  background-color: var(--hover);
+}
+
+.button--register {
+  color: var(--main-color);
+
+  border: solid 2px var(--main-color);
+  box-sizing: border-box;
+}
+
+.button--register:hover {
+  border-color: var(--hover);
+  color: var(--hover);
+
+  background-color: #e9f4ef;
+}
+
+.footer {
+  font-family: Avenir-Book;
+
+  display: flex;
+  justify-content: center;
+
+  margin: 0 0 8px;
+}
+
+.footer__text {
+  margin: 0;
+}
+
+.footer__link {
+  border-bottom: solid 1px var(--main-color);
+  color: var(--black);
+}
